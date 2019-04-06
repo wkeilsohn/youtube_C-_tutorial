@@ -1,43 +1,36 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main()
 {
-    int numDay;
-    cout<< "Please enter a weekday number: ";
-    cin >> numDay;
-    string dayName;
+    int num1, num2;
+    char op;
 
-    switch(numDay) {
-    case 0:
-        dayName = "Sunday";
-        break;
-    case 1:
-        dayName = "Monday";
-        break;
-    case 2:
-        dayName = "Tuesday";
-        break;
-    case 3:
-        dayName = "Wednesday";
-        break;
-    case 4:
-        dayName = "Thursday";
-        break;
-    case 5:
-        dayName = "Friday";
-        break;
-    case 6:
-        dayName = "Saturday";
-        break;
-    case 7:
-        dayName = "Caturday!";
-        break;
-    default:
-        dayName = "Invalid day of the week.";
+    cout << "Enter first number, please: ";
+    cin >> num1;
+
+    cout << "Enter second number, please: ";
+    cin >> num2;
+
+    cout << "Enter operator, please: ";
+    cin >> op;
+
+    int result;
+
+    if(op == '+'){
+        result = num1 + num2;
+    } else if(op == '-'){
+        result = num1 - num2;
+    } else if(op == '*'){
+        result = num1 * num2;
+    } else if(op == '/'){
+        result = num1 / num2;
+    } else{
+    cout << "Invalid operator";
     }
-    cout << "The day of the week is: "<< dayName;
+    cout << "The result is "<< result;
 
     return 0;
 }

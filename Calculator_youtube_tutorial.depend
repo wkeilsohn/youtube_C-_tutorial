@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1548949769 source:/home/william/Documents/C++_Scripts/Calculator_youtube_tutorial/main.cpp
+	<iostream>
+	<cmath>
+
